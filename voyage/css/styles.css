@@ -1,0 +1,270 @@
+body{
+    background-color: rgba(69, 71, 70, 0.842);
+}
+
+/* menu deroulant */
+#myHeader {
+    z-index: 1;
+}
+
+#menu {
+    width: 100%;
+    margin: 0px;
+    padding: 10px 0 0 0;
+    list-style: none;
+    background: rgb(13, 179, 201);
+    background: -moz-linear-gradient(rgba(82, 243, 189, 0.658), rgb(13, 179, 201));
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(13, 179, 201)), color-stop(1, rgba(82, 243, 189, 0.658)));
+    background: -webkit-linear-gradient(rgba(82, 243, 189, 0.658), rgb(13, 179, 201));
+    background: -o-linear-gradient(rgba(82, 243, 189, 0.658), rgb(13, 179, 201));
+    background: -ms-linear-gradient(rgba(82, 243, 189, 0.658), rgb(13, 179, 201));
+    background: linear-gradient(rgba(82, 243, 189, 0.658), rgb(13, 179, 201));
+    opacity: 100%;
+}
+
+#menu li {
+    float: left;
+    padding: 0 0 10px 0;
+    position: relative;
+}
+
+#menu a {
+    float: left;
+    height: 25px;
+    padding: 0 25px;
+    color: black;
+    text-transform: uppercase;
+    font: bold 12px/25px Arial, Helvetica;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+#menu li:hover>a {
+    color: #3b1cc5;
+}
+
+*html #menu li a:hover {
+    /* IE6 */
+    color: #3b1cc5;
+}
+
+#menu li:hover>ul {
+    display: block;
+}
+
+/* Sous-menu */
+
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    z-index: 99999;
+    background: rgba(82, 243, 189, 0.658);
+    background: -moz-linear-gradient(rgba(82, 243, 189, 0.658), rgb(13, 179, 201));
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(13, 179, 201)), color-stop(1, rgba(82, 243, 189, 0.658)));
+    background: -webkit-linear-gradient(rgba(82, 243, 189, 0.658), rgb(13, 179, 201));
+    background: -o-linear-gradient(rgba(82, 243, 189, 0.658), rgb(13, 179, 201));
+    background: -ms-linear-gradient(rgba(82, 243, 189, 0.658), rgb(13, 179, 201));
+    background: linear-gradient(rgba(82, 243, 189, 0.658), rgb(13, 179, 201));
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#menu ul ul {
+    display: none; 
+    position: absolute; 
+    left: 144px; 
+    top: -1px;
+    margin:0px; 
+    padding: 0px; 
+    border: 1px solid rgb(35, 152, 219);
+}
+
+#menu ul li {
+    float: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+#menu ul li:last-child {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#menu ul a {
+    padding: 10px;
+    height: auto;
+    line-height: 1;
+    display: block;
+    white-space: nowrap;
+    float: none;
+    text-transform: none;
+}
+
+*html #menu ul a {
+    /* IE6 */
+    height: 10px;
+    width: 150px;
+}
+
+*:first-child+html #menu ul a {
+    /* IE7 */
+    height: 10px;
+    width: 150px;
+}
+
+#menu ul a:hover {
+    background: rgb(122, 235, 255);
+    background: -moz-linear-gradient(rgb(122, 235, 255), rgb(122, 235, 255));
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(122, 235, 255)), to(rgb(122, 235, 255)));
+    background: -webkit-linear-gradient(rgb(122, 235, 255), rgb(122, 235, 255));
+    background: -o-linear-gradient(rgb(122, 235, 255), rgb(122, 235, 255));
+    background: -ms-linear-gradient(rgb(122, 235, 255), rgb(122, 235, 255));
+    background: linear-gradient(rgb(122, 235, 255), rgb(122, 235, 255));
+}
+
+#menu ul li:first-child a {
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+}
+
+#menu ul li:first-child a:after {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: -8px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid transparent    ;
+}
+
+#menu ul li:first-child a:hover:after {
+    border-bottom-color: black;
+}
+
+#menu ul li:last-child a {
+    -moz-border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+}
+
+/* Rétablissement du flottement */
+
+#menu:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.content {
+    padding-top: 102px;
+}
+
+h1{
+    margin: 0 0 0 20px;
+    font-size: 50px;
+    color: rgb(122, 235, 255);
+}
+#entete{
+    width: 100vw;
+    height: 600px;
+    color: rgb(19, 147, 170);
+    background-image: url(https://nouvelles.paxeditions.com/storage/app/uploads/public/5c7/572/1f9/thumb_81956_1200_1_0_0_auto.jpg);
+    background-repeat: no-repeat ;
+    background-size: 50vw auto;
+    background-position: center;
+    text-align: center;
+}  
+/* #entete p{
+    font-size: 50px;
+} */
+ 
+#basDeTete{
+    font-size: 40px;
+    color: rgb(19, 147, 170);
+    text-align: center;
+}
+#enteteP1 {
+    margin-bottom: 0%;
+}
+#enteteP2 {
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+#enteteP3{
+    margin-top: 0%;
+}
+#destination{
+    margin: 200px auto 0 auto;
+    border: 3px solid rgba(99, 99, 99, 0.308);
+    background-color: grey;
+    width: 80vw;
+    height: auto;
+}
+#destination h3{
+    text-align: center;
+    font-size: 45px;
+    color: rgb(21, 124, 143);
+}
+#destination p{
+    font-size: 15px;
+    color: rgb(122, 235, 255);
+    margin: 0 20px;
+    text-align: justify;
+}
+#lastPDesti{
+    margin-bottom: 20px;
+}
+#right{
+    float: right;
+    
+}
+#left{
+    float: left;
+    
+}
+#center{
+    background-image: url(https://www.bouger-voyager.com/wp-content/uploads/2017/09/bahamas-vue-du-ciel.jpg);
+    background-repeat: no-repeat ;
+    background-size: 50vw auto;
+    background-position: center;
+}
+#prix{
+    margin: 200px auto 0 auto;
+    border: 3px solid rgba(99, 99, 99, 0.308);
+    background-color: grey;
+    width: 80vw;
+    height: auto;
+}
+#prix h2{
+    text-align: center;
+    font-size: 45px;
+    color: rgb(21, 124, 143);
+}
+#prix p{
+    font-size: 15px;
+    color: rgb(122, 235, 255);
+    margin: 0 20px;
+    text-align: justify;
+}
+/*#lastPDesti{
+    margin-bottom: 20px;
+} */
