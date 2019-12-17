@@ -4,7 +4,7 @@
 }
 
 #menu {
-    width: 100%;
+    width: 100vw;
     margin: 0px;
     padding: 10px 0 0 0;
     list-style: none;
