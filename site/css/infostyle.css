@@ -1,0 +1,95 @@
+#reseau{
+    text-align: left;
+    margin-left: 10%;
+    font-size: 37.5px;
+}
+/* code pour le tableau, barre a gauche*/
+.timelineL-item-details-date, .timelineL-item-details-marker, .timelineL-item-details-description {
+    float: left;
+}
+
+.timelineL-item-details-date {
+    color: #FFF;
+    font-size: 1.3em;
+    transition: transform .3s;
+}
+.timelineL-item-details:hover .timelineL-item-details-date,.timelineL-item-details-date:hover{
+    transform: scale(1.4);
+}
+
+.timelineL-item-details-description {
+    padding: 16px;
+    color: #333;
+    background-color: #FFF;
+    width: 76%;
+    border-radius: 4px;
+    margin-left: 20%;
+    margin-top: -20px;
+    word-wrap: break-word;
+    opacity: .9;
+    transition: opacity .3s, transform .3s
+}
+
+.timelineL-item-details:hover .timelineL-item-details-description {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.timelineL-item-details-description h2 {
+    font-size: 2.5em;
+    margin-bottom: 16px;
+}
+
+.timelineL-item-details-description p {
+    line-height: 23px;
+    width: 70%;
+    float: right;
+}
+
+.timelineL-item-details {
+    display: inline-block;
+    margin-bottom: 64px;
+}
+
+.timelineL-item:first-child .timelineL-item-details {
+    margin-top: 64px;
+}
+
+.timelineL-item {
+    margin: 0 74px;
+}
+
+.timelineL {
+    position: relative;
+    width: 80vw;
+    overflow-y: hidden;
+}
+#formation {
+    width: 90vw;
+    height: auto;
+    background-color: rgba(85, 85, 85, 0.616);
+    margin: 0 auto;
+}
+#titre{
+    text-align: center;
+}
+h1{
+    text-align: center;
+    font-family: Bradley Hand, sans-serif;
+    font-size: 80px;
+    color: black;
+}
+#historyContenaire{
+    width: 80%;
+    padding: 20px 0px 60px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(71, 71, 71, 0.24);
+}
+#textHistory{
+    width: 64%;
+    height: auto;
+    font-size: 20px;
+    margin: auto;
+}

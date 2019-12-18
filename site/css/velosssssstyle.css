@@ -1,0 +1,94 @@
+
+/* code pour le tableau, barre a gauche*/
+.timelineL-item-details-date, .timelineL-item-details-marker, .timelineL-item-details-description {
+    float: left;
+}
+
+.timelineL-item-details-date {
+    color: #FFF;
+    font-size: 1.3em;
+}
+
+.timelineL-item-details-marker {
+    position: relative;
+    z-index: auto;
+    border-radius: 50%;
+    background-color: grey;
+    width: 35px;
+    height: 35px;
+    border: 3px solid #FFF;
+    margin-left: 8%;
+    transition: transform .3s, background-color .3s;
+}
+
+.timelineL-item-details:hover .timelineL-item-details-marker {
+    transform: scale(1.4);
+    background-color: #FFF;
+}
+
+.timelineL-item-details-description {
+    padding: 16px;
+    color: #333;
+    background-color: #FFF;
+    width: 76%;
+    border-radius: 4px;
+    margin-left: 20%;
+    margin-top: -20px;
+    word-wrap: break-word;
+    opacity: .9;
+    transition: opacity .3s, transform .3s
+}
+
+.timelineL-item-details:hover .timelineL-item-details-description {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.timelineL-item-details-description h2 {
+    font-size: 2.5em;
+    margin-bottom: 16px;
+}
+
+.timelineL-item-details-description p {
+    line-height: 23px;
+    width: 70%;
+    float: right;
+}
+
+.timelineL-item-details {
+    display: inline-block;
+    margin-bottom: 64px;
+}
+
+.timelineL-item:first-child .timelineL-item-details {
+    margin-top: 64px;
+}
+
+.timelineL-item {
+    margin: 0 74px;
+}
+
+.timelineL {
+    position: relative;
+    width: 80vw;
+    overflow-y: hidden;
+}
+#formation {
+    width: 90vw;
+    height: auto;
+    background-color: rgba(85, 85, 85, 0.616);
+    margin: 0 auto;
+}
+.contenu{
+    display: flex;
+    flex-wrap: wrap;
+}
+#titre{
+    text-align: center;
+}
+h1{
+    text-align: center;
+    font-family: Bradley Hand, sans-serif;
+    font-size: 80px;
+    color: black;
+}

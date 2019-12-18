@@ -1,0 +1,44 @@
+#textTop{
+    text-align: center;
+    font-size: 150px;
+    margin: 10px auto;
+    font-family: Bradley Hand, sans-serif;
+}
+#entete {
+    width: 67%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.choixVetement{
+    width: 500px;
+    margin: 10px 20px;
+    text-align: center;
+    background-color: grey;
+    border: 2px solid black;
+    height: auto;
+    transition: transform .3s, color .8s;
+}
+.choixVetement:hover{
+    transform: scale(1.1);
+    background-color: rgb(173, 173, 173);
+}
+
+#case{
+    color: white;
+}
+#historyContenaire{
+    width: 80%;
+    padding: 20px 0px 60px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(71, 71, 71, 0.24);
+}
+#textHistory{
+    width: 64%;
+    height: auto;
+    font-size: 20px;
+    margin: auto;
+}

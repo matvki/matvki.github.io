@@ -7,5 +7,22 @@ body{
     /* background-color: rgba(55, 201, 118, 0.336); */
 }
 .espace{
-    margin-top: 10vw;
+    width: 100vw;
+    margin: 15vw auto 5vw;
+    text-align: center;
+}
+
+.espace p {
+    border: 3px solid rgb(104, 104, 104);
+    font-size: 70px;
+    margin: auto auto;
+    font-family: Bradley Hand, sans-serif;
+    transition: transform .3s;    
+    -webkit-transition: transform .3s; /* pour Safari 3.1 à 6.0 */
+}
+.espace p:hover{
+    transform: scale(1.4);
+}
+a{
+    text-decoration: none;
 }

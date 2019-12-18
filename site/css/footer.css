@@ -1,0 +1,105 @@
+
+/* Footer */
+/* mail footer */
+footer{
+    z-index: 10000;
+}
+.footerEmail{
+    background-image: url(./img/footerimg.jpg);
+    background-position: center;
+    padding: 60px 0;
+    font-size: 25px;
+}
+.footerContenaire{
+    width: 90%;
+    padding: 20px 0 60px;
+    margin: 0 auto;
+}
+.footerEmail h4{
+    color: rgb(102, 102, 102);
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+    letter-spacing: 3px;
+}
+.footerEmail p{
+    color: rgb(58, 58, 58);
+    text-align: center;
+    margin: 0;
+    padding: 10px 0 15px;
+}
+.footerEmail form{
+    width: 88%;
+    margin: 0 auto;
+}
+.footerEmail input[name="email"]{
+    min-height: 45px;
+    margin-left: 9%;
+    float: left;
+    border: 0px solid grey;
+    color: black;
+    width: 61%;
+    font-size: 20px;
+}
+.footerEmail button{
+    color: grey;
+    background-color: rgba(255, 255, 255, 0.753);
+    border-radius: 0px;
+    min-height: 45px;
+    border: 2px solid white;
+    margin-right: 9%;
+    float: right;
+    width: 15%;
+    font-size: 20px;
+    transition: transform .3s;
+}
+.footerEmail button:hover{
+    transform: scale(1.1);
+}
+
+.footerEmail .footerSend{
+    display: none;
+}
+.footerEmail form::after{
+    content: "";
+    display: table;
+    clear: both;
+    box-sizing: border-box;
+} 
+.textFooter{
+    color: rgba(255, 255, 255, 0.753);
+    text-decoration: none;
+}
+footer{
+    background-color: black;
+}
+footer ul{
+    margin: 0;
+}
+
+footer ul li{
+    list-style-type: none;
+    padding-bottom: 3px;
+    line-height: 2em;
+}
+
+#footerContent{
+    padding: 10px 5px 0px;
+    width: 96%;
+    margin: 0 auto;
+
+}
+li.inline{
+    display : inline;
+    padding: 0 8%;
+    font-size: 20px;
+}
+
+#copi{
+    text-align: right;
+    font-size: 10px;
+    color: grey;
+}
+#footerForm{
+    text-align: center;
+}
